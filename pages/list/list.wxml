@@ -1,0 +1,6 @@
+<!--pages/list/list.wxml-->
+  <view>
+    <text class="user-motto">{{food}}</text>
+    <button bindtap='startInterval'>帮我想~</button>
+    <button bindtap='confirm'>就它了！</button>
+  </view>

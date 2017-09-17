@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view>
+ 
+  <view>
+  <view class="index-title bold">中午吃点啥？</view>
+  <view class="index-title">Step 1，选择心动的「食物类别」</view>
+   <view class="page__bd">
+        <view class="weui-grids">
+            <block wx:for="{{grids}}" wx:key="*this"  wx:for-item="grid">
+                <view bindtap='nextPage' bind:longpress="openSheet" data-url-id="{{grid.id}}" class="weui-grid" hover-class="weui-grid_active" style="background: {{colorset[index%8]}}">
+                    <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+                    <view class="weui-grid__label">{{grid.name}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+  </view>
+
+  <button bind:tap="customPage" class="circle-btn">+</button>
+
+ 
+
+</view>

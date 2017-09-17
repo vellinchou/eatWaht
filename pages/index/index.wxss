@@ -1,0 +1,55 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.index-title{
+  text-align: center;
+  padding: 30rpx 0 ;
+}
+
+.bold {
+  font-weight: bolder
+}
+
+.circle-btn {
+  position: fixed;
+  bottom: 64rpx;
+  right: 64rpx;
+
+  width: 64px ;
+  height: 64px ;
+  line-height: 64px ;
+  text-align: center;
+  border-radius: 50% ;
+  background: #ff7670;
+  color: white;
+  font-size: 24px ;
+  font-weight: light;
+}
+
+.weui-grid {
+   border: 0 ;
+   color: grey
+}
+
+.weui-grid__label {
+  color: white
+}

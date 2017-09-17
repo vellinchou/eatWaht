@@ -1,0 +1,33 @@
+<!--pages/custom/custom.wxml-->
+<view class="custom-container">
+<view class="index-title">Step 2, 添加让你纠结的「食物菜单」</view>
+<view class="custom-caidan">
+  <view class="weui-cells__title">菜单名称</view>
+  <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+              <input class="weui-input" value="" placeholder='如：软件园餐厅；外卖；'  bindinput="bindTitle"  />
+          </view>
+      </view>
+  </view>
+</view>
+<br/>
+
+<view class="weui-cells__title">输入您的选择项</view>
+<scroll-view scroll-y  class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input"  wx:for="{{tips}}">
+        <view class="weui-cell__bd">
+           <input class="weui-input" 
+            data-id="{{index}}" 
+            value="{{item.value}}" 
+            bindfocus="bindFocus" 
+            bindinput="bindKeyInput"
+            confirm-type="next"/>
+        </view>
+    </view>
+</scroll-view>
+<button bind:tap="addMore" class="custom-add">添加更多</button>
+</view>
+
+<button class="weui-btn custom-save" bind:tap="getTips"  type="primary">保存</button>
+
