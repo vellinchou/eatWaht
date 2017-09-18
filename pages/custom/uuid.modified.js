@@ -4,7 +4,7 @@
 //     MIT License - http://opensource.org/licenses/mit-license.php
 
 /*global window, require, define */
-(function(_window) {
+module.exports = (function(_window) {
     'use strict';
 
 
@@ -16,12 +16,11 @@
 
     function setupBrowser() {
         // Allow for MSIE11 msCrypto
-        // var _crypto = _window.crypto || _window.msCrypto;
-        if(!crypto) {
-          console.log('!crypto')
-          var crypto = {}
-        }
+        //var _crypto = _window.crypto || _window.msCrypto;
+        var crypto = {}
         var _crypto = crypto || _window.crypto || _window.msCrypto;
+
+        console.log(crypto)
 
 
         if (!_rng && _crypto && _crypto.getRandomValues) {
@@ -268,13 +267,16 @@
 
     if (('undefined' !== typeof module) && module.exports) {
         // Publish as node.js module
+      console.log('module.exports')
         module.exports = uuid;
     } else if (typeof define === 'function' && define.amd) {
+      console.log('function')
         // Publish as AMD module
         define(function() { return uuid; });
 
 
     } else {
+      console.log('_previousRoot = _window.uuid')
         // Publish as global (in browsers)
         _previousRoot = _window.uuid;
 
@@ -289,3 +291,5 @@
 
 
 })('undefined' !== typeof window ? window : null);
+
+ 

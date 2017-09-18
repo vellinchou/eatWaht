@@ -9,3 +9,19 @@
   padding: 100rpx 0 0 0;
   box-sizing: border-box;
 } 
+
+.color-light {
+  color: #575958 ;
+  margin-bottom: 10px;
+}
+
+.color-dark{
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.color-golden {
+  color: #81dafa ;
+  font-size: 120% ;
+  font-weight: bolder ;
+}

@@ -39,10 +39,10 @@
   line-height: 64px ;
   text-align: center;
   border-radius: 50% ;
-  background: #ff7670;
+  background: #81dafa;
   color: white;
   font-size: 24px ;
-  font-weight: light;
+  font-weight: bolder;
 }
 
 .weui-grid {

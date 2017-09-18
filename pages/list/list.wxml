@@ -1,6 +1,22 @@
 <!--pages/list/list.wxml-->
-  <view>
-    <text class="user-motto">{{food}}</text>
-    <button bindtap='startInterval'>帮我想~</button>
-    <button bindtap='confirm'>就它了！</button>
+ 
+  <view class="container">
+  
+    <view style="text-align: center">
+      <view class="color-light"> <image class="list-icon" src="./img/right.png"></image> 长按按钮</view>
+      <view class="color-dark"> <image class="list-icon" src="./img/right.png"></image>默念咒语N遍:宝贝宝贝我吃啥</view>
+      <view class="color-light"> <image class="list-icon" src="./img/right.png"></image>松手</view>
+    </view>
+    <text class="color-golden">{{food}}</text> 
+ 
+  
+  
+    <button class="list-circle-btn" bind:longpress='startInterval' bind:touchend="confirm">
+      <image src='./img/click.png' style='width: 32px;height:32px;margin-top:32px'></image>
+    </button>
+
   </view>
+ 
+  
+
+    

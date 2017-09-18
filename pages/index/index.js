@@ -4,30 +4,37 @@ const app = getApp()
 
 Page({
   data: {
+    defaultSrc: './img/default.png',
     grids: [
       {
         "id":"msmx",
-        "name":"面食 · 米线"
+        "name":"面食 · 米线",
+        "src": "./img/mianshi.png"
       },
       {
         "id": "jcbd",
-        "name": "简餐 · 便当"
+        "name": "简餐 · 便当",
+        "src": "./img/biandiang2.png"
       },
       {
         "id": "hbps",
-        "name": "汉堡 · 披萨"
+        "name": "汉堡 · 披萨",
+        "src": "./img/hanbao.png"
       },
       {
         "id": "ldld",
-        "name": "来点の辣的"
+        "name": "来点の辣的",
+        "src": "./img/lajiao.png"
       },
       {
         "id": "random",
-        "name": "随机の推荐"
+        "name": "随机の推荐",
+        "src": "./img/shiwu.png"
       },
       {
         "id": "rhll",
-        "name": "日韩の料理"
+        "name": "日韩の料理",
+        "src": "./img/shousi.png"
       },
       
     ],

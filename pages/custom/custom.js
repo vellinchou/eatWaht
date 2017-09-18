@@ -59,6 +59,7 @@ Page({
     var array = this.data.tips
     var _this = this
     var uuid = require('../../utils/node-uuid/uuid.modified.js'); 
+    // var uuid = require('./uuid.modified.js'); 
 
     console.log(uuid.v4());  
 

@@ -20,4 +20,10 @@
   width: 100% ;
   border-radius: 0;
   z-index: 999;
+  background: #55d393!important;
+  border: 0
+}
+
+button::after {
+  content: none
 }

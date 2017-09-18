@@ -6,7 +6,7 @@
   <view class="weui-cells weui-cells_after-title">
       <view class="weui-cell weui-cell_input">
           <view class="weui-cell__bd">
-              <input class="weui-input" value="" placeholder='如：软件园餐厅；外卖；'  bindinput="bindTitle"  />
+              <input class="weui-input" value="" placeholder='如：软件园餐厅；万象城；外卖；'  bindinput="bindTitle"  />
           </view>
       </view>
   </view>
@@ -14,7 +14,7 @@
 <br/>
 
 <view class="weui-cells__title">输入您的选择项</view>
-<scroll-view scroll-y  class="weui-cells weui-cells_after-title">
+<scroll-view scroll-y  class="weui-cells weui-cells_after-title" style="border-bottom: 0">
     <view class="weui-cell weui-cell_input"  wx:for="{{tips}}">
         <view class="weui-cell__bd">
            <input class="weui-input" 
@@ -26,7 +26,9 @@
         </view>
     </view>
 </scroll-view>
-<button bind:tap="addMore" class="custom-add">添加更多</button>
+<button bind:tap="addMore" class="custom-add"> 
+  <image src ="./img/showon.png" style="width: 32px; height: 32px;"></image>
+</button>
 </view>
 
 <button class="weui-btn custom-save" bind:tap="getTips"  type="primary">保存</button>

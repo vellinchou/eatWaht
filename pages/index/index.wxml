@@ -8,7 +8,7 @@
         <view class="weui-grids">
             <block wx:for="{{grids}}" wx:key="*this"  wx:for-item="grid">
                 <view bindtap='nextPage' bind:longpress="openSheet" data-url-id="{{grid.id}}" class="weui-grid" hover-class="weui-grid_active" style="background: {{colorset[index%8]}}">
-                    <image class="weui-grid__icon" src="../images/icon_tabbar.png" />
+                    <image class="weui-grid__icon" src="{{grid.src || defaultSrc}}" />
                     <view class="weui-grid__label">{{grid.name}}</view>
                 </view>
             </block>
