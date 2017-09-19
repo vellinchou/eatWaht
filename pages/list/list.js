@@ -108,17 +108,20 @@ Page({
 
   },
   startInterval() {
-    console.log('startInterval')
-    var h = this.data.foodList.length
-    var flag = 0
 
     console.log(this.data.timer)
 
-    if (this.data.timer) { return }
+    var h = this.data.foodList.length
+
+    if (this.data.timer) {
+      clearInterval(this.data.timer)
+      this.data.timer = null
+      return
+    } 
 
     this.data.timer = setInterval(() => {
 
-      var random = Math.floor( Math.random() * this.data.foodList.length )
+      var random = Math.floor( Math.random() * h )
 
       this.setData({
         food: this.data.foodList[random]
